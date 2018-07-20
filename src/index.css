@@ -7,11 +7,6 @@ body {
 }
 
 /* My code for the Challenge1 */
-.father {
-  display: grid;
-  grid-gap: 15px;
-  grid-template-columns: repeat(5, 1fr);
-}
 
 .child {
   color: black;
@@ -21,4 +16,28 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* My code for the Challenge1 */
+.father1, .father2 {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 100px 70px 100px;
+}
+
+.father1 .child-6 {
+  grid-column: span 2;
+  background: #e67e22;
+}
+
+.father1 .child-10 {
+  grid-column: span 5;
+  background: green;
+}
+
+.father2 .child-3 {
+  grid-column: span 3;
+  grid-row: span 2;
+  background: blue;
 }
